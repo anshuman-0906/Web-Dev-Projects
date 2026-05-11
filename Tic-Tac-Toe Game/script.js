@@ -12,7 +12,7 @@ let winPatterns=[
     [2,4,6]];
 btns.forEach((btn)=>{
     btn.addEventListener("click",()=>{
-        turn?(btn.innerText="O",turn=false):(btn.innerText="X",turn=true);
+        turn?(btn.innerText="O",turn=false,btn.style.color="#fefae0"):(btn.innerText="X",turn=true,btn.style.color="#ccd5ae");
         btn.disabled=true;
         checkWinner();
     });
